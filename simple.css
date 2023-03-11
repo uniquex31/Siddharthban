@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background: #1d1d1d;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.name {
+  color: aliceblue;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+.name .na {
+  color: darksalmon;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  color: aliceblue;
+}
+
+.head {
+  display: flex;
+}
+
+.container .about {
+  margin-top: 50px;
+}
+
+.about p {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 35px;
+  margin-bottom: 55px;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h4 a {
+  color: white;
+  text-decoration: none
+}
+
+.titl .percentage {
+  float: right;
+}
+
+span {
+  font-size: 20px;
+}
+
+.skills {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: relative;
+  border: 2px solid aliceblue;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+#html-bar {
+  animation: html-fill 4s forwards;
+}
+
+@keyframes html-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+#css-bar {
+  animation: css-fill 4s forwards;
+}
+
+@keyframes css-fill {
+  100% {
+    width: 70%;
+  }
+}
+
+#js-bar {
+  animation: js-fill 4s forwards;
+}
+
+@keyframes js-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#python-bar {
+  animation: python-fill 4s forwards;
+}
+
+@keyframes python-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#linux-bar {
+  animation: linux-fill 4s forwards;
+}
+
+@keyframes linux-fill {
+  100% {
+    width: 40%;
+  }
+}
+
+#net-bar {
+  animation: net-fill 4s forwards;
+}
+
+@keyframes net-fill {
+  100% {
+    width: 30%;
+  }
+}
+
+.position {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#personal {
+  color:white;
+  text-decoration:none;
+  position:absolute;
+  bottom:15px;
+  right:2%;
+}
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.svg-wrapper {
+  margin-top: 15px;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+
+
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #add7ec;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+#text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #fff;
+}
+
+.social {
+  text-align: center;
+  font-size: 30px;
+}
+
+.social-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px;
+}
+
+.social-links li {
+  margin: 0 8px;
+}
+
+.social-links li a {
+  border: 3px solid black;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ddd;
+  border-radius: 50%;
+  border-right: none;
+  border-top: none;
+  transition: 0.5s ease;
+}
+
+.fa-twitter:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  transform: rotate(360deg);
+  background-color: #00acee;
+  border-color: #ddd;
+}
+
+.fa-linkedin:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  transform: rotate(360deg);
+  background-color: #0A66C2;
+  border-color: #ddd;
+}
+
+.fa-instagram:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  transform: rotate(360deg);
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-color: #ddd;
+}
+
+.fa-github:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  transform: rotate(360deg);
+  background-color: #171515;
+  border-color: #ddd;
+}
+
+.fa-google:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  transform: rotate(360deg);
+  background: rgb(66, 133, 244);
+  background: linear-gradient(180deg, rgba(66, 133, 244, 1) 0%, rgba(219, 68, 55, 1) 32%, rgba(15, 157, 88, 1) 100%);
+  border-color: #ddd;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.footer a{
+  text-decoration: none;
+  color: #ddd;
+}
+.footer a:hover{
+  text-decoration: underline;
+  color: #add7ec;
+}
